@@ -1,33 +1,49 @@
 # TaskTracker
 
-Sistema de linha de comando para cadastrar e acompanhar tarefas.
+Sistema de linha de comando desenvolvido em Python 3 para cadastrar, visualizar e acompanhar tarefas.
 
 ## Funcionalidades
 
-- Cadastrar tarefas com título, descrição, prioridade e data limite.
-- Validar título obrigatório, prioridade e data no formato `DD/MM/AAAA`.
-- Listar todas as tarefas e exibir seus dados.
-- Marcar tarefas como concluídas.
-- Mostrar o total de tarefas concluídas.
+* Cadastrar tarefas com título, descrição, prioridade e data limite.
+* Validar o título obrigatório e as prioridades permitidas: Alta, Média ou Baixa.
+* Validar a data limite no formato `DD/MM/AAAA`.
+* Listar as tarefas cadastradas com seus dados e status.
+* Marcar tarefas como concluídas.
+* Exibir o total de tarefas concluídas.
 
-## Tecnologias
+## Tecnologias utilizadas
 
-- Python 3
-- Git e GitHub
+* Python 3: implementação da aplicação.
+* Git: controle de versão do código.
+* GitHub: hospedagem do repositório.
 
 ## Requisitos
 
-Ter o Python 3 instalado.
+* Python 3 instalado.
+* Git instalado, caso deseje clonar e versionar o projeto.
 
-## Como executar
+## Instalação e execução
 
-Na pasta raiz do projeto, execute:
+Clone o repositório:
+
+```bash
+git clone https://github.com/claricenunes/tasktracker-projeto.git
+```
+
+Entre na pasta do projeto:
+
+```bash
+cd tasktracker-projeto
+```
+
+Execute a aplicação:
 
 ```bash
 python3 src/main.py
 ```
 
-No menu, escolha uma opção:
+## Menu da aplicação
+
 1. Cadastrar nova tarefa
 2. Visualizar tarefas cadastradas
 3. Concluir tarefa
