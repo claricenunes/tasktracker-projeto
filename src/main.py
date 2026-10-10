@@ -4,7 +4,6 @@ tarefas = []
 
 
 def ler_titulo():
-    """Solicita um título obrigatório, sem aceitar texto vazio."""
     while True:
         titulo = input("Título da tarefa: ").strip()
         if titulo:
@@ -13,7 +12,6 @@ def ler_titulo():
 
 
 def ler_prioridade():
-    """Aceita apenas Alta, Média/Media ou Baixa."""
     prioridades = {
         "alta": "Alta",
         "média": "Média",
@@ -29,7 +27,6 @@ def ler_prioridade():
 
 
 def ler_data_limite():
-    """Valida uma data no formato DD/MM/AAAA."""
     while True:
         data = input("Data limite (DD/MM/AAAA): ").strip()
         try:
@@ -106,8 +103,7 @@ def exibir_menu():
     print("\n===== TASKTRACKER =====")
     print("1. Cadastrar nova tarefa")
     print("2. Visualizar tarefas cadastradas")
-    print("3. Concluir tarefa")
-    print("4. Sair da aplicação")
+    print("3. Sair da aplicação")
 
 
 def main():
@@ -120,12 +116,10 @@ def main():
         elif opcao == "2":
             visualizar_tarefas()
         elif opcao == "3":
-            concluir_tarefa()
-        elif opcao == "4":
             print("Encerrando o TaskTracker. Até mais!")
             break
         else:
-            print("Opção inválida. Escolha uma opção de 1 a 4.")
+            print("Opção inválida. Escolha uma opção de 1 a 3.")
 
 
 if __name__ == "__main__":
