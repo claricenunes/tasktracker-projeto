@@ -8,8 +8,7 @@ Sistema de linha de comando desenvolvido em Python 3 para cadastrar, visualizar 
 * Validar o título obrigatório e as prioridades permitidas: Alta, Média ou Baixa.
 * Validar a data limite no formato `DD/MM/AAAA`.
 * Listar as tarefas cadastradas com seus dados e status.
-* Marcar tarefas como concluídas.
-* Exibir o total de tarefas concluídas.
+* Definir automaticamente o status inicial como Pendente.
 
 ## Tecnologias utilizadas
 
@@ -46,8 +45,7 @@ python3 src/main.py
 
 1. Cadastrar nova tarefa
 2. Visualizar tarefas cadastradas
-3. Concluir tarefa
-4. Sair da aplicação
+3. Sair da aplicação
 
 ## Observação
 
